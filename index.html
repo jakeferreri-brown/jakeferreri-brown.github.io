@@ -203,6 +203,12 @@
     .plates.five{grid-template-columns:1fr 1fr;} .plates.five>*{grid-column:auto !important;}
   }
   @media(max-width:460px){ .plates, .plates.one, .plates.two, .plates.four, .plates.five{grid-template-columns:1fr;} }
+  .plates.cfd2{grid-template-columns:repeat(2,1fr);}
+  .plates.figrow{grid-template-columns:minmax(0,720px);justify-content:center;}
+  .plate--fig{aspect-ratio:16/9;background:#fff;}
+  .plate--fea{aspect-ratio:1070/799;background:#fff;}
+  .plate--fig img,.plate--fea img{object-fit:contain;}
+  @media(max-width:760px){ .plates.cfd2{grid-template-columns:1fr;} }
 
   .plate{
     position:relative;aspect-ratio:4/3;margin:0;
@@ -396,7 +402,7 @@
       </div>
       <h3 class="sheet__title reveal">Drag Reduction System for FSAE Car</h3>
 
-      <div class="plates five reveal">
+            <div class="plates two reveal">
         <figure class="plate">
           <img src="images/drs-closed.jpg" alt="DRS mechanism in the high-downforce (closed) configuration" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
           <div class="plate__ph"><span class="g"></span><span class="plate__lbl">Awaiting plate</span><span class="plate__file">images/drs-closed.jpg</span></div>
@@ -405,17 +411,38 @@
           <img src="images/drs-open.jpg" alt="DRS mechanism in the low-drag (open) configuration" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
           <div class="plate__ph"><span class="g"></span><span class="plate__lbl">Awaiting plate</span><span class="plate__file">images/drs-open.jpg</span></div>
         </figure>
+      </div>
+
+      <div class="plates reveal">
         <figure class="plate">
           <img src="images/drs-zoom.jpg" alt="Close-up of the pushrod, rod-end, and clevis-bracket pivot" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
           <div class="plate__ph"><span class="g"></span><span class="plate__lbl">Awaiting plate</span><span class="plate__file">images/drs-zoom.jpg</span></div>
         </figure>
         <figure class="plate">
-          <img src="images/drs-cfd.jpg" alt="STAR-CCM+ CFD pressure distribution across the wing" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-          <div class="plate__ph"><span class="g"></span><span class="plate__lbl">Awaiting plate</span><span class="plate__file">images/drs-cfd.jpg</span></div>
+          <img src="images/drs-zoom_shoulder.jpg" alt="Section view of the clevis bracket and shoulder-bolt pinned joint" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+          <div class="plate__ph"><span class="g"></span><span class="plate__lbl">Awaiting plate</span><span class="plate__file">images/drs-zoom_shoulder.jpg</span></div>
         </figure>
         <figure class="plate">
           <img src="images/drs-testrig.jpg" alt="Bench test rig for validating the pneumatic actuator stroke" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
           <div class="plate__ph"><span class="g"></span><span class="plate__lbl">Awaiting plate</span><span class="plate__file">images/drs-testrig.jpg</span></div>
+        </figure>
+      </div>
+
+      <div class="plates cfd2 reveal">
+        <figure class="plate plate--fig">
+          <img src="images/drs-velocity-1.jpg" alt="STAR-CCM+ velocity cut plot across the rear wing and DRS" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+          <div class="plate__ph"><span class="g"></span><span class="plate__lbl">Awaiting plate</span><span class="plate__file">images/drs-velocity-1.jpg</span></div>
+        </figure>
+        <figure class="plate plate--fig">
+          <img src="images/drs-velocity-2.jpg" alt="STAR-CCM+ velocity cut plot across the rear wing and DRS" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+          <div class="plate__ph"><span class="g"></span><span class="plate__lbl">Awaiting plate</span><span class="plate__file">images/drs-velocity-2.jpg</span></div>
+        </figure>
+      </div>
+
+      <div class="plates figrow reveal">
+        <figure class="plate plate--fea">
+          <img src="images/drs-cylinder_mount_FEA.jpg" alt="Ansys von-Mises stress analysis of the pneumatic cylinder-mount bracket and clevis tab" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+          <div class="plate__ph"><span class="g"></span><span class="plate__lbl">Awaiting plate</span><span class="plate__file">images/drs-cylinder_mount_FEA.jpg</span></div>
         </figure>
       </div>
 
