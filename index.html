@@ -459,7 +459,7 @@
           <ul>
             <li>A double-acting pneumatic cylinder drives a system of mechanical linkages, rotating three airfoils from the default high-downforce setting to near-zero angles of attack.</li>
             <li>Uses the car's existing air tank for actuation — adding performance for minimal added weight and complexity.</li>
-            <li>Waterjet-cut carbon fiber linkages and SLS-printed Nylon 12 clevis brackets for lightweight strength.</li>
+            <li>Waterjet-cut carbon fiber linkages and SLS-printed Nylon 12 clevis brackets for minimized weight.</li>
             <li>Shoulder bolts and bronze bushings for low-friction pinned joints at the clevises.</li>
             <li>An extension spring, airfoil centers of pressure ahead of the pivots, and a solenoid return spring default the mechanism to the closed position in the event of pneumatic or electrical failure.</li>
             <li>Hand calculations and FEA validate stresses in the clevis brackets.</li>
@@ -469,8 +469,11 @@
           <p class="col__h"><span>C</span> Progress</p>
           <ul>
             <li>Design finalized.</li>
-	    <li>Extracted aero loads at peak loading condition (top speed at end of straight w/ DRS open) using Siemens STAR-CCM+.</li>
-            <li>Clevis-bracket stresses validated with hand calcs and FEA in Ansys Mechanical using extracted aero loads from CFD.</li>
+			<li>Extracted aero loads at peak loading condition (top speed at end of straight w/ DRS closed) using Siemens STAR-CCM+.</li>
+	    	<li><b>~60%</b> drag reduction on DRS deployment (symmetric half-car model, STAR-CCM+, residuals to 1e-7).</li>
+			<li>Spring return that closes DRS w/ <b>2.25×</b> margin and is overcome on cylinder deployment w/ <b>1.89×</b> actuation margin</li>
+            <li>Clevis-bracket max stresses (combined bolt preload, linkage forces, and 3g bump) validated to <b>2.50</b> safety factor in FEA study in Ansys Mechanical.</li>
+			<li>Shoulder bolt pivot pins validated with fatigue hand calc for infinite life.</li>
             <li>Designed a test rig utilizing the team's jig table to test actuator stroke before installing full mechanism on car.</li>
             <li>Carbon fiber and SLS Nylon 12 clevis brackets done, and will be ordered post bench testing.</li>
             <li>Targeting full rear-wing implementation by the end of December, before winter break.</li>
